@@ -1,0 +1,115 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+                            http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="04" author="Gayrat">
+        <insert tableName="vehiclelogentry">
+            <column name="regno" value="N_01"> </column>
+            <column name="date" valueDate="2022-11-01"> </column>
+            <column name="vehicle"  valueNumeric="01"> </column>
+            <column name="owner"    valueNumeric="02"> </column>
+            <column name="startingodometr"    valueNumeric="25692"> </column>
+            <column name="endingodometr"    valueNumeric="26050"> </column>
+            <column name="route"    value="Samarqand - Tashkent"> </column>
+            <column name="description"    value="buying office supplies"> </column>
+        </insert>
+        <insert tableName="vehiclelogentry">
+            <column name="regno" valueDate="N_02"> </column>
+            <column name="date" valueDate="2022-11-02"> </column>
+            <column name="vehicle"  valueNumeric="01"> </column>
+            <column name="owner"    valueNumeric="03"> </column>
+            <column name="startingodometr"    valueNumeric="26050"> </column>
+            <column name="endingodometr"    valueNumeric="26870"> </column>
+            <column name="route"    value="Tashkent - Nukus"> </column>
+            <column name="description"    value="delivery office equipments"> </column>
+        </insert>
+        <insert tableName="vehiclelogentry">
+            <column name="regno" valueDate="N_03"> </column>
+            <column name="date" valueDate="2022-11-04"> </column>
+            <column name="vehicle"  valueNumeric="01"> </column>
+            <column name="owner"    valueNumeric="03"> </column>
+            <column name="startingodometr"    valueNumeric="26870"> </column>
+            <column name="endingodometr"    valueNumeric="27750"> </column>
+            <column name="route"    value="Nukus - Andijan"> </column>
+            <column name="description"    value="delivery sales products"> </column>
+        </insert>
+        <insert tableName="vehiclelogentry">
+            <column name="regno" valueDate="N_04"> </column>
+            <column name="date" valueDate="2022-11-06"> </column>
+            <column name="vehicle"  valueNumeric="01"> </column>
+            <column name="owner"    valueNumeric="03"> </column>
+            <column name="startingodometr"    valueNumeric="27750"> </column>
+            <column name="endingodometr"    valueNumeric="28120"> </column>
+            <column name="route"    value="Andijan - Tashkent"> </column>
+            <column name="description"    value="delivery sales products"> </column>
+        </insert>
+        <insert tableName="vehiclelogentry">
+            <column name="regno" valueDate="N_05"> </column>
+            <column name="date" valueDate="2022-11-10"> </column>
+            <column name="vehicle"  valueNumeric="01"> </column>
+            <column name="owner"    valueNumeric="02"> </column>
+            <column name="startingodometr"    valueNumeric="28120"> </column>
+            <column name="endingodometr"    valueNumeric="28512"> </column>
+            <column name="route"    value="Tashkent - Buhoro"> </column>
+            <column name="description"    value="delivery office equipments"> </column>
+        </insert>
+
+        <insert tableName="vehiclelogentry">
+            <column name="regno" valueDate="N_06"> </column>
+            <column name="date" valueDate="2022-11-11"> </column>
+            <column name="vehicle"  valueNumeric="02"> </column>
+            <column name="owner"    valueNumeric="01"> </column>
+            <column name="startingodometr"    valueNumeric="11625"> </column>
+            <column name="endingodometr"    valueNumeric="11900"> </column>
+            <column name="route"    value="Andijan - Tashkent"> </column>
+            <column name="description"    value="servicing to outsourcing"> </column>
+        </insert>
+        <insert tableName="vehiclelogentry">
+            <column name="regno" valueDate="N_07"> </column>
+            <column name="date" valueDate="2022-11-12"> </column>
+            <column name="vehicle"  valueNumeric="02"> </column>
+            <column name="owner"    valueNumeric="01"> </column>
+            <column name="startingodometr"    valueNumeric="11625"> </column>
+            <column name="endingodometr"    valueNumeric="11900"> </column>
+            <column name="route"    value="Tashkent - Qarshi"> </column>
+            <column name="description"    value="servicing to outsourcing"> </column>
+        </insert>
+        <insert tableName="vehiclelogentry">
+            <column name="regno" valueDate="N_08"> </column>
+            <column name="date" valueDate="2022-11-14"> </column>
+            <column name="vehicle"  valueNumeric="02"> </column>
+            <column name="owner"    valueNumeric="01"> </column>
+            <column name="startingodometr"    valueNumeric="11625"> </column>
+            <column name="endingodometr"    valueNumeric="11900"> </column>
+            <column name="route"    value="Qarshi - Namangan"> </column>
+            <column name="description"    value="servicing to outsourcing"> </column>
+        </insert>
+        <insert tableName="vehiclelogentry">
+            <column name="regno" valueDate="N_09"> </column>
+            <column name="date" valueDate="2022-11-17"> </column>
+            <column name="vehicle"  valueNumeric="02"> </column>
+            <column name="owner"    valueNumeric="01"> </column>
+            <column name="startingodometr"    valueNumeric="11625"> </column>
+            <column name="endingodometr"    valueNumeric="11900"> </column>
+            <column name="route"    value="Namangan - Tashkent"> </column>
+            <column name="description"    value="servicing to outsourcing"> </column>
+        </insert>
+        <insert tableName="vehiclelogentry">
+            <column name="regno" valueDate="N_10"> </column>
+            <column name="date" valueDate="2022-11-18"> </column>
+            <column name="vehicle"  valueNumeric="02"> </column>
+            <column name="owner"    valueNumeric="01"> </column>
+            <column name="startingodometr"    valueNumeric="11625"> </column>
+            <column name="endingodometr"    valueNumeric="11900"> </column>
+            <column name="route"    value="Tashkent - Urganch"> </column>
+            <column name="description"    value="servicing to outsourcing"> </column>
+        </insert>
+
+    </changeSet>
+
+
+</databaseChangeLog>

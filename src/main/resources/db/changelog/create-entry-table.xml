@@ -1,0 +1,49 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+                            http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="02" author="Gayrat">
+        <createTable tableName="vehiclelogentry" remarks="Journalling vehicle movement">
+            <column name="id" type="int" autoIncrement="true">
+                <constraints nullable="false" unique="true" primaryKey="true"/>
+            </column>
+            <column name="regno" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="vehicle" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="owner" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="startingodometr" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="endingodometr" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="route" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="description" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+
+
+    </changeSet>
+
+</databaseChangeLog>

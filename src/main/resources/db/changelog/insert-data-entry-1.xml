@@ -1,0 +1,36 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+                            http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet id="03" author="Gayrat">
+        <comment>Inserting Vehicles </comment>
+        <insert tableName="owner">
+            <column name="name" value="driver_01"> </column>
+            <column name="id" valueNumeric = "01"> </column>
+        </insert>
+        <insert tableName="owner">
+            <column name="name" value="driver_02"> </column>
+            <column name="id" valueNumeric = "02"> </column>
+        </insert>
+        <insert tableName="owner">
+            <column name="name" value="driver_01"> </column>
+            <column name="id" valueNumeric = "03"> </column>
+        </insert>
+        <insert tableName="vehicle">
+            <column name="name" value="car_01_01"> </column>
+            <column name="owner" valueNumeric="01"> </column>
+            <column name="id" valueNumeric = "01"> </column>
+        </insert>
+        <insert tableName="vehicle">
+            <column name="name" value="car_01_02"> </column>
+            <column name="owner" valueNumeric="01"> </column>
+            <column name="id" valueNumeric = "02"> </column>
+        </insert>
+    </changeSet>
+
+
+</databaseChangeLog>
